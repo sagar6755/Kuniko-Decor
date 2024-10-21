@@ -144,7 +144,7 @@ body {
   width: 100%;
   height: 400px;
   margin-top: 50px;
-  background-image: url(images/MG_2333.jpg);
+  /* background-image: url(images/MG_2333.jpg); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,9 +154,12 @@ body {
 .banner-text {
   background-color: #f3e6e4bf;
   padding: 30px;
-  /* position: absolute; */
+  position: absolute;
   width: 40%;
   text-align: center;
+  bottom: 45%; /* Position the text at the bottom */
+  left: 30%;
+  right: 25%;
   
 }
 
@@ -184,6 +187,9 @@ body {
   text-align: center;
   padding: 20px;
 }
+
+
+/* Lisiting card */
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -298,24 +304,25 @@ margin-right: 15px;
 
 }
 
-
+.content3 img{
+  /* width: 50%; */
+  width: 90%;
+  background-size: cover;
+}
 
 /* ------------------------------------FOOTER--START-------------------------------------------- */
 .footer {
-  /* position: fixed; */
-  /* left: 0;
-  bottom: 0; */
-  background-color: #333;
+   background-color: #333;
   color: white;
   padding: 70px 0;
-  /* width: 100%;
-  text-align: center; */
   margin-top: 200px;
+
 }
 
-.container {
+.footer-container {
   max-width: 1170px;
-  margin: auto;
+  margin-left: 11%;
+  height: 280px;
 }
 
 ul {
@@ -324,7 +331,8 @@ ul {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-left: 80px; */
 }
 
 .footer-col {
@@ -398,33 +406,23 @@ ul {
   transition: all 0.2s ease;
 
 }
+.sub-footer{
 
-/*
-footer div{
-  display: flex;
-  justify-content: space-evenly ;
+  border-top:  1px solid #e0e0df17;
+  margin-top: 50px;
+  width: 1320px;
+  margin-left: 14px;
+
 }
 
-footer div ul{
-  text-align: left;
-  list-style: none;
-
-} */
-
+.sub-footer p{
+ text-align: center;
+ margin-top: 20px;
+ margin-bottom: -50px;
+}
 /* ---------------------------------------------FOOTER--END----------------------------------- */
 
-/* Responsive */
 
-/* @media(max-width: 767px){
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-
-}
-}  */
-
-/* created bootsrap for my own */
-/* col-xs-* for extra small screens (phones) */
 .col-xs-3 {
   width: 25%;
 }
