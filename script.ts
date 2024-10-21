@@ -1,0 +1,1 @@
+const showSearch: boolean = false;
