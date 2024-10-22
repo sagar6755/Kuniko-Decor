@@ -314,15 +314,15 @@ margin-right: 15px;
 .footer {
    background-color: #333;
   color: white;
-  padding: 90px 0;
-  margin-top: 200px;
+  /* padding: 20px 0; */
 
 }
 
 .footer-container {
   max-width: 1170px;
   margin-left: 11%;
-  height: 280px;
+  height: fit-content;
+  margin-top: 50px;
 }
 
 ul {
@@ -332,12 +332,12 @@ ul {
 .row {
   display: flex;
   justify-content: center;
-  /* margin-left: 80px; */
+  padding-top: 30px;
 }
 
 .footer-col {
   width: 25%;
-  padding: 0px 15px;
+  /* padding: 0px 15px; */
 
 }
 
@@ -345,7 +345,7 @@ ul {
   font-size: 1.2rem;
   color: #ffffff;
   text-transform: capitalize;
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
   font-weight: 500px;
   position: relative;
 }
@@ -364,13 +364,8 @@ ul {
 
 
 
-.footer-col ul li {
-  margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-  font-size: 16px;
-  color: #ffffff;
+.footer-col ul li a, i {
+  font-size: 1rem;
   text-transform: capitalize;
   text-decoration: none;
   font-weight: 300px;
@@ -393,23 +388,23 @@ ul {
 
 .footer-icon i{
   font-size: 1.5rem;
-  padding: 5px;
-}
-.social-link a i {
-  padding-bottom: 10px;
-
+  padding-right: 5px;
 }
 
 .social-link a {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   /* margin-left: 10px; */
-  display: inline-block;
-  height: 40px;
-  width: 40px;
+  /* display: inline-block; */
+  /* height: 40px;
+  width: 40px; */
   /* background-color: #bbbbbb; */
-  border-radius: 50%;
-  text-align: center;
+  /* border-radius: 50%; */
+  /* text-align: center; */
+  padding: 0px 10px 0px 0px;
+}
+.social-link a i{
+  font-size: 1.5rem;
 }
 
 .social-link a i:hover {
@@ -417,18 +412,24 @@ ul {
   font-size: 2rem;
   transition: all 0.2s ease;
 }
+
 .sub-footer{
 
   border-top:  1px solid #e0e0df17;
   margin-top: 100px;
   width: 1320px;
+  align-content: center;
   margin-left: 14px;
 }
 
 .sub-footer p{
  text-align: center;
- margin-top: 20px;
- margin-bottom: -80px;
+ /* margin-top: 20px; */
+ margin: 10px;
+
+}
+.subfooter-hr{
+  opacity: 15%;
 }
 /* ---------------------------------------------FOOTER--END----------------------------------- */
 
