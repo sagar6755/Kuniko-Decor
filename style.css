@@ -16,7 +16,7 @@ body {
 }
 
 /* ----------------------------------------HEADER------------------------------------------- */
-.header {
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@ body {
 
 
 
-.navbar {
+nav {
   display: flex;
   /* Make sure the navbar is a flex container */
   justify-content: center;
@@ -50,9 +50,6 @@ body {
   color: black;
   /* Change link color */
   font-size: 0.8em;
-
-
-
 }
 
 .nav-btn::before {
@@ -163,6 +160,7 @@ body {
   
 }
 
+
 .banner-text h3 {
   font-family: Embassy BT;
   margin: 0;
@@ -189,8 +187,8 @@ body {
 }
 
 
-/* Lisiting card */
-.card {
+/* Lisiting boxes */
+.boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -199,20 +197,25 @@ body {
 }
 
 
-.card1 {
+.box {
   width: 320px;
   height: 200px;
   box-sizing: border-box;
   border: solid white 2px;
-  /* padding: 5px; */
+  margin: 5px;
+  position: relative;
 
+}
+
+.box-btn-a {
+  font-size: 0px;
 }
 
 .buy-btn{
   position: absolute;     /* Position the button relative to the container */
-  bottom: 10px;           /* Distance from the bottom of the container */
+  bottom: 12px;           /* Distance from the bottom of the container */
   right: 10px;             /* Distance from the left of the container */
-  padding: 10px 15px;     /* Add padding to the button */
+  padding: 8px 13px;     /* Add padding to the button */
   color: white;
   border: none;
   cursor: pointer;
@@ -220,9 +223,9 @@ body {
 
 .seeMore-btn{
   position: absolute;     /* Position the button relative to the container */
-  bottom: 10px;           /* Distance from the bottom of the container */
+  bottom: 12px;           /* Distance from the bottom of the container */
   left: 10px;             /* Distance from the left of the container */
-  padding: 10px 15px;     /* Add padding to the button */
+  padding: 8px 13px;     /* Add padding to the button */
   color: white;
   border: none;
   cursor: pointer;
@@ -230,21 +233,15 @@ body {
 .buy-btn:hover, .seeMore-btn:hover{
   background-color: #f3e6e4bf; /* Button styling (Bootstrap color) */
   color: black;
-  /* background-color: #333; */
 transition: 20ms;
-opacity: 100%;
 }
 
-.card1-btn{
+.box-btn{
   /* display: flex;
   justify-content:right; */
   position: relative; /* Set container to relative positioning */
-  display: inline-block; /
+  display: inline-block;
   
-}
-.card a {
-  margin: 3px 0px;
-
 }
 
 
@@ -253,7 +250,7 @@ opacity: 100%;
   padding: 10px;
 }
 
-.content1 {
+#content1 {
   /* display: flex; */
   /* justify-content: center; */
   align-items: center;
@@ -285,30 +282,56 @@ opacity: 100%;
   margin: 6rem;
 }
 
-.content2 {
+#content2 {
   display: flex;
   align-items: center;
 
 }
 
-.content2 img {
+#content2 img {
   width: 40%;
   box-sizing: border-box;
   padding: 50px;
 }
 
-.content2 p{
+#content2 p{
 background-color: #f3e6e4bf;
 padding: 10px;
 margin-right: 15px;
 
 }
 
-.content3 img{
+#content3 img{
   /* width: 50%; */
   width: 90%;
   background-size: cover;
 }
+
+#video{
+  text-align: center;
+}
+
+#location{
+  text-align: center;
+}
+
+
+#signup-form{
+margin-top: 200px;
+border: solid black 2px;
+height: 200px;
+width: 50%;
+text-align: center;
+align-content: center;
+margin: 100px 25%;
+
+}
+
+form{
+  text-align: right;
+  margin: 50px;
+}
+
 
 /* ------------------------------------FOOTER--START-------------------------------------------- */
 .footer {
