@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,39 +26,23 @@
     <meta name="theme-color" content="#ffffff">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/54192ed05e.js" crossorigin="anonymous"></script>
-
 </head>
+
 <body>
-
-   
-
-
-
     <main>
-        <div id="form-logo"><a href="index.html"><img src="images/Logo_2.png" alt="logo"></a></div>
-        <section id="signup-form">
-            <form action="" method="">
-                <h1>Create Account</h1>
-                <label for="name">Your name</label>
-                <input minlength="1" maxlength="50" pattern="[a-z, A-Z]*" id="name" required name="name" placeholder="First and last name" type="text">
-                
-
-                <label for="mobile_number">Mobile number</label>
-                <div id="country_code"><select name="" id="select-country_code" ><option value="">IN +91</option></select>
-                    <input id="mobile_number" required pattern="[0-9]*" title="Enter a valid phone number" minlength="10" maxlength="10" name="mobile_number" placeholder="Mobile number" type=""></div>
-                
-                <label for="email">Email</label>
-                <input id="email" name="email" placeholder="email" type="email">
-                
-                
-                <label for="password">Password</label>
-                <input minlength="6" maxlength="50" id="password" required  name="password" placeholder="At least 6 characters" type="password">
-                <summary>
-                    By creating an account, you agree to Kuniko Decor's <a href="">Conditions of Use</a> and <a href="">Privacy Notice</a>.
-                </summary>
-                       
-                <button>Signup</button>
-            </form>
+        <section id="location">
+            <h1>Location</h1>
+        <iframe 
+            class="gmap_iframe" 
+            height="315"
+            width="560"
+            frameborder="5 " 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0" 
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=ducat vikaspuri&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+        </iframe>
+        
         </section>
     </main>
 
@@ -99,7 +84,7 @@
                         <li class="footer-icon"><i class="fa-brands fa-whatsapp"></i><a href="">+91-8285029324</a></li>
                         <li class="footer-icon"><i class="fa-regular fa-envelope"></i><a
                                 href="#">Kunikodecoration@gmail.com</a></li>
-                        <li class="footer-icon"><i class="fa-solid fa-shop"></i><a href="#">Our Stores</a></li>
+                        <li class="footer-icon"><i class="fa-solid fa-shop"></i><a href="location.html">Our Location</a></li>
                         <li class="footer-icon"><i class="fa-solid fa-earth-americas"></i><a>
                                 <select name="" id="">
                                     <option value="">India</option>
