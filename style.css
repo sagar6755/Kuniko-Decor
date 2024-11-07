@@ -51,7 +51,10 @@ nav {
   color: black;
   font-size: 0.8em;
 }
+aside a{
+  width: fit-content;
 
+}
 .nav-btn::before {
   content: '';
   position: absolute;
@@ -77,6 +80,21 @@ nav {
 #logo, #logo img {
   width: 200px;
   /* margin-left: 3rem; */
+  position: relative;
+  left: 0;
+  margin-left: 20px;
+}
+.left-nav{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 20px;
+}
+.menu-bar{
+  color: #000000;
+  height: fit-content;
+  width: fit-content;
+  display: none;
+  text-decoration: none;
 }
 
 aside{
@@ -89,11 +107,11 @@ aside{
   background-color: rgb(237 226 212 / 85%);
   box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
   backdrop-filter: blur(2px);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  /* display: none; */
+  align-items: center;
 }
 
 aside ul{
@@ -104,10 +122,20 @@ aside ul li, aside ul li a{
   list-style: none;
   text-decoration: none;
   width: 100%;
+  text-align: left;
+
 }
 
 aside ul li:hover{
   background-color: #64b4b4;
+
+}
+
+.close-btn i{
+  color: #000000;
+}
+.close-btn{
+  padding: 10px;
 
 }
 .nav-icons {
@@ -444,6 +472,16 @@ form button{
   cursor: pointer;
 }
 
+
+#video{
+  height: 250px;
+  width: 70%;
+
+
+}
+#video-section{
+text-align: center  ;
+}
 /* ------------------------------------FOOTER--START-------------------------------------------- */
 .footer {
    background-color: #333;
@@ -465,14 +503,19 @@ ul {
 
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   padding-top: 30px;
 }
 
-.footer-col {
+@media (max-width: 835px){
+ 
+  .footer-container ul li{
+    font-size: 10px;
+  }
+}
+.footer-col{
   width: 25%;
-  /* padding: 0px 15px; */
-
+font-size: small;
 }
 
 .footer-col h3 {
@@ -507,6 +550,17 @@ ul {
   display: block;
   transition: all 0.3s ease;
 }
+@media (max-width:974px){
+  .footer-col ul li a {
+    font-size: small;
+  }
+  footer section h3{
+    font-size: small;
+  }
+#video{
+  width: 100%;
+}
+}
 
 .footer-col ul li a:hover {
   color: #ffffff;
@@ -539,12 +593,12 @@ ul {
 }
 .social-link a i{
   font-size: 1.5rem;
+  transition: all 0.2s ease;
 }
 
 .social-link a i:hover {
   color: #ffffff;
   font-size: 2rem;
-  transition: all 0.2s ease;
 }
 
 .sub-footer{
@@ -569,13 +623,27 @@ ul {
 
 
 /* Resopnsive */
+@media (max-width:400px){
+  aside{
+    width: 100%;
 
-@media (max-width:974px) {
-  
-  .nav-btn{
-    display: none;
+    align-items: center;
+    
   }
 }
+@media (max-width:974px) {
+  
+  .show-on-mobile{
+    display: none;
+  }
+
+  .menu-bar{
+    display: flex;
+  }
+
+}
+
+
 
 .col-xs-3 {
   width: 25%;

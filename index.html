@@ -34,13 +34,27 @@
 
     <header class="header">
         <nav>
+
+            <!-- Menu bar -->
+            <aside id="sideBar">
+                <a class="nav-btn" onclick="hideSideBar()" href="#"><i class="fa-solid fa-xmark"></i></a>
+                <a class="nav-btn" href="#">Decor</a>
+                <a class="nav-btn" href="#">Wall Decor</a>
+                <a class="nav-btn" href="#">Kitchen & Dinning</a>
+                <a class="nav-btn" href="#">Lighting</a>
+                <a class="nav-btn" href="#">Furniture</a>
+                <a class="nav-btn" href="#">Bath Decor</a>
+            </aside>
             <!-- Logo -->
+           <div class="left-nav">
+            <a onclick="showSidebar()" class="menu-bar" href="#"><i class="fa-solid fa-bars menu-bar"></i></a>
             <a href="">
                 <img id="logo" src="images/Logo_2.png" alt="Logo">
             </a>
+           </div>
 
             <!-- nav-Buttons -->
-            <div>
+            <div class="show-on-mobile">
                 <a class="nav-btn" href="#">Decor</a>
                 <a class="nav-btn" href="#">Wall Decor</a>
                 <a class="nav-btn" href="#">Kitchen & Dinning</a>
@@ -177,11 +191,10 @@
             ipsam architecto!</p>
     </section>
 
-    <section id="video">
+    <section id="video-section">
         <h1>How to use</h1>
         <iframe 
-        width="560" 
-        height="315" 
+        id="video" 
         src="https://www.youtube.com/embed/M-XeO35FWLY?si=zaZzcZihzlpdwZ9R" 
         title="YouTube video player" 
         frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -197,7 +210,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="row">
-                <div class="footer-col">
+                <section class="footer-col">
 
                     <h3>Support</h3>
                     <ul>
@@ -210,8 +223,8 @@
 
 
                     </ul>
-                </div>
-                <div class="footer-col">
+                </section>
+                <section class="footer-col">
 
                     <h3>Quick Links</h3>
                     <ul>
@@ -223,8 +236,8 @@
 
 
                     </ul>
-                </div>
-                <div class="footer-col">
+                </section>
+                <section class="footer-col">
 
                     <h3>Get in touch</h3>
                     <ul>
@@ -242,8 +255,8 @@
 
 
                     </ul>
-                </div>
-                <div class="footer-col">
+                </section>
+                <section class="footer-col">
 
                     <h3>Follow Us</h3>
                     <div class="social-link">
@@ -253,7 +266,7 @@
                                 class="fa-brands fa-instagram"></i></a>
                         <a href="#"> <i class="fa-brands fa-twitter"></i></a>
                     </div>
-                </div>
+                </section>
 
             </div>
         </div>
