@@ -92,6 +92,7 @@ aside a {
   display: flex;
   justify-content: space-evenly;
   margin: 0px 20px;
+  align-items: center;
 }
 
 .menu-bar {
@@ -100,6 +101,7 @@ aside a {
   width: fit-content;
   display: none;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 aside {
@@ -157,6 +159,7 @@ aside ul li:hover {
   padding: 10px;
   font-size: large;
   color: black;
+  cursor: pointer;
 }
 
 .nav-icon:hover {
@@ -165,7 +168,7 @@ aside ul li:hover {
 }
 
 .search-bar {
-  display: flex;
+  display: none;
   justify-content: center;
   margin: 10px 40px;
   align-items: center;
@@ -179,12 +182,7 @@ aside ul li:hover {
 .search-icon {
 
   font-size: 1.5em;
-  margin-left: -30px;
-  margin-right: 20px;
-  align-content: center;
-  display: flex;
-  justify-content: left;
-
+  margin-right: 25px;
 }
 
 .search-input {
@@ -192,10 +190,18 @@ aside ul li:hover {
   height: 20px;
   align-items: center;
   font-size: large;
-  /* border-radius: 60px; */
   border: none;
+  outline: #011414;
+  /* background-color: rgb(217, 212, 204); */
   background-color: transparent;
-  /* outline-color: red; */
+
+}
+
+.search-input:focus {
+  color: #000000;
+  /* outline: 1px solid green; */
+  border-color:  rgb(190, 184, 173);
+  box-shadow: 0 0 2px 2px rgb(190, 184, 173);
 
 }
 
@@ -281,12 +287,11 @@ aside ul li:hover {
 
 }
 
-.box:hover {
+/* .box:hover {
   width: 340px;
-  /* height: 220px; */
   margin: 0px;
   padding: 0px;
-}
+} */
 
 .box-btn-a {
   font-size: 0px;
@@ -667,7 +672,7 @@ i {
 
 /* Resopnsive */
 
-@media (min-width: 400px) {
+@media (min-width: 0px)and (max-width:767px){
   .nav-icons {
     margin-right: 0;
 }
