@@ -25,7 +25,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <script type="module" src="data.js"></script>
     <script src="https://kit.fontawesome.com/54192ed05e.js" crossorigin="anonymous"></script>
 
 </head>
@@ -77,8 +78,8 @@
 
         <!-- Search bar -->
         <div class="search-bar">
-            <i class="fa-sharp-duotone fa-solid fa-magnifying-glass search-icon"></i>
             <input class="search-input" type="search" placeholder="">
+            <i class="fa-sharp-duotone fa-solid fa-magnifying-glass search-icon"></i>
         </div>
     </header>
 
@@ -89,83 +90,45 @@
 
 
     <!-- Top-banner -->
-     <section>
+     <!-- <section class="banner-section">
     <img src="images/MG_2333.jpg" class="banner">
     <div class="banner-text">
-        <h3>Kuniko Decor</h3>
-        <h4>Handmade Decoration with Love <i class="fa-solid heart-icon fa-heart"></i></h4>
+        <h1>Kuniko Decor</h2>
+        <p>Handmade Decoration with Love <i class="fa-solid heart-icon fa-heart"></i></p>
 
     </div>
-    </section>
+    </section> -->
+    <section class="banner-section">
+        <!-- <img src="images/MG_2333.jpg" class="banner"> -->
+        <div class="banner-text">
+            <h1>Kuniko Decor</h2>
+            <p>Handmade Decoration with Love <i class="fa-solid heart-icon fa-heart"></i></p>                
+        </div>
+        </section>
 
 
     <!--Lisiting Content -->
     <section class="content">
-        <h1 class="content-text">Decoration Items</h1>
-        <div class="boxes">
-            <div class="box-btn"> <a class="box-btn-a" href="images/4.jpg " target="_blank"><img class="box"
-                        src="images/4.jpg" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-            <div class="box-btn"> <a class="box-btn-a" href="images/MG_2242.JPG" target="_blank" class=""><img class="box"
-                        src="images/MG_2242.JPG" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-            <div class="box-btn"> <a class="box-btn-a" href="images/6 copy.jpg " target="_blank" class=""><img class="box"
-                        src="images/6 copy.jpg" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-            <div class="box-btn"> <a class="box-btn-a" href="images/Toran L+M 3.jpg " target="_blank" class=""><img class="box"
-                        src="images/Toran L+M 3.jpg" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-            <div class="box-btn"> <a class="box-btn-a" href="images/Yellow Toran 6b.jpg " target="_blank" class=""><img class="box"
-                        src="images/Yellow Toran 6b.jpg" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-            <div class="box-btn"> <a class="box-btn-a" href="images/MG_2213.JPG " target="_blank" class=""><img class="box"
-                        src="images/MG_2213.JPG" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-            <div class="box-btn"> <a class="box-btn-a" href="images/Toran L+R 6.jpg " target="_blank" class=""><img class="box"
-                        src="images/Toran L+R 6.jpg" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-            <div class="box-btn"> <a class="box-btn-a" href="images/MG_2267.JPG " target="_blank" class=""><img class="box"
-                        src="images/MG_2267.JPG" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-            <div class="box-btn"> <a class="box-btn-a" href="images/MG_2322.jpg " target="_blank" class=""><img class="box"
-                        src="images/MG_2322.jpg" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-            <div class="box-btn"> <a class="box-btn-a" href="images/Latkan BG4b copy.jpg " target="_blank" class=""><img class="box"
-                        src="images/Latkan BG4b copy.jpg" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-            <div class="box-btn"> <a class="box-btn-a" href="images/Toran L+R 3.jpg " target="_blank" class=""><img class="box"
-                        src="images/Toran L+R 3.jpg" alt="Toran"></img></a>
-                <a class="seeMore-btn" href="#">See more</a>
-                <a class="buy-btn" href="#">Buy now</a>
-            </div>
-
+        <h2 class="content-text">Decoration Items</h2>
+        <div class="cards">       
+                <!-- <div class="card">
+                    <img class="card-img" src="images/4.jpg" alt="toran">
+                    <div class="card-body">
+                        <h3>Title: Toran</h3>
+                        <p>Lorem ipsum </p>
+                    </div>
+                    <div class="btn-div">
+                        <button class="add-btn btn">Add to cart</button>
+                    <button class="buy-btn btn">buy now</button>
+                    </div>
+                    </div> -->
         </div>
     </section>
 
     <!-- Middle Content -->
     <section id="content1"><img src="images/Logo_2.png" alt="banner" class="logo-banner">
         <div class="content1-text">
-            <h1>Artificial Decoration Flower Garlands with Colourful Ring, Pom Pom and Bells</h1>
+            <h2>Artificial Decoration Flower Garlands with Colourful Ring, Pom Pom and Bells</h2>
             <p>Kuniko Decoration Introducing our enchanting artificial flower garland, a stunning piece designed to
                 infuse any space with a burst of vibrant color and everlasting beauty. This meticulously crafted garland
                 brings the allure and charm of fresh flowers without the need for maintenance, allowing you to enjoy its
@@ -193,8 +156,8 @@
             ipsam architecto!</p>
     </section>
 
-    <section id="video-section">
-        <h1>How to use</h1>
+    <!-- <section id="video-section">
+        <h2>How to use</h2>
         <iframe 
         id="video" 
         src="https://www.youtube.com/embed/M-XeO35FWLY?si=zaZzcZihzlpdwZ9R" 
@@ -203,7 +166,7 @@
         referrerpolicy="strict-origin-when-cross-origin" 
         allowfullscreen>
     </iframe>
-</section> 
+</section>  -->
 </main>
 
 

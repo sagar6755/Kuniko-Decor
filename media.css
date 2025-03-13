@@ -7,8 +7,14 @@
   
   html{
     font-size: 12px;
+    
 }
-
+/* h3{
+  font-size: 30px !important;
+}
+h4{
+  font-size: 20px !important;
+} */
 .footer-col {
     width: 50%;
     margin-top: 40px;
@@ -31,6 +37,15 @@
     }
     /* #form-logo a img{
      width: 50%;
+    } */
+
+    /* .banner{
+      height: 50%;
+    } */
+
+    /* .banner-text {
+          
+    
     } */
   }
   

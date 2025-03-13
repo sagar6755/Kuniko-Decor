@@ -49,8 +49,9 @@ nav {
   font-size: 0.8em;
 }
 
-aside a {
+aside a, aside a i {
   width: fit-content;
+  font-size: 2rem !important;
 
 }
 
@@ -166,38 +167,40 @@ aside ul li:hover {
 
 .search-bar {
   display: none;
-  justify-content: center;
-  margin: 10px 40px;
   align-items: center;
-  background-color: rgb(217, 212, 204);
-  height: 50px;
+  margin: 10px 40px;
+  background: linear-gradient(135deg, #ffd1af, #e7904f);
+  padding: 10px;
+  padding-left: 20px;
   border-radius: 60px;
-  /* outline: black; */
-  border: solid #333 0.3px;
+  border: none;
 }
 
 .search-icon {
-
-  font-size: 1.5em;
-  margin-right: 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0px 10px;
+  /* margin-right: 20px; */
 }
 
 .search-input {
-  width: 90%;
-  height: 20px;
-  align-items: center;
-  font-size: large;
+flex-grow: 1;
+  font-size: 1.5rem;
   border: none;
-  outline: #011414;
-  /* background-color: rgb(217, 212, 204); */
+  padding-right: 5px;
+  padding-left: 10px;
+  /* border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px; */
   background-color: transparent;
-
+  outline: none;
 }
 
 .search-input:focus {
+  border: none;
+  outline: none;
   color: #000000;
-  /* outline: 1px solid green; */
-  border-color:  rgb(190, 184, 173);
+  /* background-color: #f0f0f0; */
+  /* border-color:  rgb(190, 184, 173); */
   box-shadow: 0 0 2px 2px rgb(190, 184, 173);
 
 }
@@ -205,140 +208,123 @@ aside ul li:hover {
 /* ---------------------------------------HEADER----END----------------------------------------- */
 
 /* ---------------------------Content---------------------------------- */
-.banner {
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  margin-top: 50px;
-  /* background-image: url(images/MG_2333.jpg); */
+.banner-section{
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  width: 100%;
+  background: url('/images/MG_2333.jpg');
+  background-size:cover;
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
 }
 
-.banner-text {
-  background-color: #f3e6e4bf;
-  padding: 30px;
-  position: absolute;
-  width: 40%;
+
+.banner-text{
   text-align: center;
-  bottom: 45%;
-  /* Position the text at the bottom */
-  left: 30%;
-  right: 25%;
-
+  padding: 10px;
+  width: fit-content;
+  background-color: #f3e6e4bf;
+  margin: auto;
+  text-align: center;
+  user-select: none;
+}
+.banner-text h1{
+  font-family: Embassy BT;
 }
 
+.banner-text p{
+  text-align: center;
+  user-select: none;
+  display: inline;
+}
 .heart-icon {
 
   color: #ff0000;
 }
 
-.banner-text h3 {
-  font-family: Embassy BT;
-  margin: 0;
-  font-size: 50px;
-  font-weight: 300;
-  line-height: 60px;
-}
-
-.banner-text h4 {
-  margin: 10px 0px;
-  font-size: 16px;
-  text-align: center;
-}
 
 .content {
   /* background-image: url(/images/2024\ articles.jpg); */
   /* background-size: cover; */
-  background-color: #e8e0ce;
+  background: url('./images/peakpx\ \(3\).jpg');
+  background-size: cover;
   height: fit-content;
 }
 
 .content-text {
   text-align: center;
+  background: #083a47 ;
+  color: #f0f0ff;
   padding: 20px;
+  margin-bottom: 10px;
 }
 
 
-/* Lisiting boxes */
-.boxes {
+/* Lisiting cards */
+
+.cards{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: space-evenly;
-  padding: 5px;
+  justify-content: space-around;
+}
+.card{
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px 0px;
+  min-height: 400px;
+  height: fit-content;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
 }
 
-
-.box {
+.card-img{
   width: 320px;
   height: 200px;
-  box-sizing: border-box;
-  border: solid white 2px;
-  margin: 5px;
-  position: relative;
-  border-radius: 20px;
-  transition: 2ms ease;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  
+}
+
+.card-body{
+margin-top: 5px;
+padding: 0px 20px;
 
 }
 
-/* .box:hover {
-  width: 340px;
-  margin: 0px;
-  padding: 0px;
-} */
-
-.box-btn-a {
-  font-size: 0px;
-}
-
-.buy-btn {
-  position: absolute;
-  /* Position the button relative to the container */
-  bottom: 12px;
-  /* Distance from the bottom of the container */
-  right: 10px;
-  /* Distance from the left of the container */
-  padding: 8px 13px;
-  /* Add padding to the button */
-  color: white;
+.add-btn{
+  float: left;
+  padding: 10px 15px;
+  color: #f0f0ff;
+  background-color:#64b4b4;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
+  transition: 20ms;
+
 }
 
-.seeMore-btn {
-  position: absolute;
-  /* Position the button relative to the container */
-  bottom: 12px;
-  /* Distance from the bottom of the container */
-  left: 10px;
-  /* Distance from the left of the container */
-  padding: 8px 13px;
-  /* Add padding to the button */
-  color: white;
+.buy-btn{
+  float: right;
+  padding: 10px 15px;
+  color: #f0f0ff;
+  background-color:#64b4b4;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
-}
-
-.buy-btn:hover,
-.seeMore-btn:hover {
-  background-color: #f3e6e4bf;
-  /* Button styling (Bootstrap color) */
-  color: black;
   transition: 20ms;
 }
-
-.box-btn {
-  /* display: flex;
-  justify-content:right; */
-  position: relative;
-  /* Set container to relative positioning */
-  display: inline-block;
-
+.btn-div{
+  padding: 20px;
 }
 
+.btn:hover{
+  background-color: #f0f0ff;
+  color: #000000;
+}
 
 .logo-banner {
   width: 80%;
@@ -346,8 +332,6 @@ aside ul li:hover {
 }
 
 #content1 {
-  /* display: flex; */
-  /* justify-content: center; */
   align-items: center;
   text-align: center;
   margin-top: 50px;
