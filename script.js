@@ -39,7 +39,44 @@ function searchBarIcon(){
         
     }
 }
-// let data = new Data;
 
-// let data2 = JSON.stringify(data);
-// console.log(JSON.parse(data2));
+// autocomplete search bar
+
+const searchInput = document.getElementById("searchInput");
+const suggestionsBox = document.getElementById("suggestions");
+
+// Sample data for autocomplete
+const items = ["Toran", "Decoration Items", "Hanging items", "wall Decoration", "Door decoration", "Home decoration", "Mango", "Orange", "Peach", "Strawberry", "Watermelon"];
+
+searchInput.addEventListener("input", function() {
+    const searchValue = this.value.toLowerCase();
+    suggestionsBox.innerHTML = "";
+    
+    if (searchValue) {
+        const filteredItems = items.filter(item => item.toLowerCase().startsWith(searchValue));
+
+        if (filteredItems.length > 0) {
+            suggestionsBox.style.display = "block";
+            filteredItems.forEach(item => {
+                const div = document.createElement("div");
+                div.textContent = item;
+                div.addEventListener("click", () => {
+                    searchInput.value = item;
+                    suggestionsBox.style.display = "none";
+                });
+                suggestionsBox.appendChild(div);
+            });
+        } else {
+            suggestionsBox.style.display = "none";
+        }
+    } else {
+        suggestionsBox.style.display = "none";
+    }
+});
+
+// Hide suggestions when clicking outside
+document.addEventListener("click", function(e) {
+    if (!searchInput.contains(e.target) && !suggestionsBox.contains(e.target)) {
+        suggestionsBox.style.display = "none";
+    }
+});

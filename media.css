@@ -9,12 +9,15 @@
     font-size: 12px;
     
 }
-/* h3{
-  font-size: 30px !important;
+
+
+#logo{
+  width: 130px;
 }
-h4{
-  font-size: 20px !important;
-} */
+
+.search-bar{
+  margin: 10px 10px;
+}
 .footer-col {
     width: 50%;
     margin-top: 40px;
@@ -39,14 +42,6 @@ h4{
      width: 50%;
     } */
 
-    /* .banner{
-      height: 50%;
-    } */
-
-    /* .banner-text {
-          
-    
-    } */
   }
   
   
@@ -65,13 +60,8 @@ h4{
     .menu-bar {
       display: none;
     }
-  
-  
-    aside {
-      width: 250px;
-      align-items: normal;
-    }
 
+  
   }
   @media (min-width: 992px) {
     .nav-icons {
